@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b3" />
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:c_border="true"
+        app:c_border_width="1dp"
+        app:c_border_color="@color/marron"
+        android:src="@drawable/ic_pic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bookpic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="578dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/namebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/shaperec"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+
+        <EditText
+            android:id="@+id/Auteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shaperec"
+            android:ems="10"
+            android:hint="Author"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/shaperec"
+            android:ems="10"
+            android:hint="book is Tooken ?"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/marron"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_done" />
+</RelativeLayout>

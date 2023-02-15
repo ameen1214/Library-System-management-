@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdduserActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b3" />
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:c_border="true"
+        app:c_border_width="1dp"
+        app:c_border_color="@color/marron"
+        android:src="@drawable/ic_pic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profilpic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="578dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="8dp"
+            android:minHeight="40dp"
+            android:background="@drawable/shaperec"
+            android:layout_margin="8dp"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:minHeight="40dp"
+            android:background="@drawable/shaperec"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:hint="Phone" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="8dp"
+            android:minHeight="40dp"
+            android:background="@drawable/shaperec"
+            android:layout_margin="8dp"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/datebirth"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:minHeight="40dp"
+            android:background="@drawable/shaperec"
+            android:layout_margin="8dp"
+            android:inputType="text"
+            android:hint="date od Birth" />
+        <EditText
+            android:id="@+id/bookToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="8dp"
+            android:minHeight="90dp"
+            android:background="@drawable/shaperec"
+            android:layout_margin="8dp"
+            android:inputType="text"
+            android:hint="Books Token " />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/marron"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_done" />
+
+</RelativeLayout>
